@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/Top100Scary.rb'
+
+Top100Scary::CLI.new.start
