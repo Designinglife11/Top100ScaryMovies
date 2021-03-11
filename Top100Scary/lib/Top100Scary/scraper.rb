@@ -8,7 +8,7 @@ class Top100Scary::Scraper
         new_movie = Top100Scary::Movie.new
     end
 
-    def initialize #instance method that initializes top 100 movies
+    def initialize_all #instance method that initializes top 100 movies
         y = 0
         all_movies = []
         while y < 100
