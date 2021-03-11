@@ -97,7 +97,7 @@ class Top100Scary::Movie
 
     #prints all details scraped for the user
     def print_details
-        puts "IMDB top 100 Ranking: #{imdb_ranking} Movie title: #{title} Directed by: #{director} Released in: #{release_date} Rated: #{rating} Runtime: #{length}"
+        puts "IMDB top 100 Ranking: #{ranking}\nMovie title: #{title}\nDirected by: #{director}\nReleased in: #{release_date}\nRated: #{rating}\nRuntime: #{length}\n"
     end
 
     #details from the selected movies IMDB page
@@ -170,16 +170,16 @@ class Top100Scary::Movie
         trivia
     end
 
-    def y_n_response
-		"Please enter 'y' for yes and 'n' for no."
-		user_input = gets.strip.downcase
-		while user_input != 'y' && user_input != 'n'
-			puts "Invalid response."
-			puts "Please enter 'y' for yes and 'n' for no."
-			user_input = gets.strip.downcase
-		end
-	    user_input
-	end
+    # def y_n_response
+	# 	"Please enter 'y' for yes and 'n' for no."
+	# 	user_input = gets.strip.downcase
+	# 	while user_input != 'y' && user_input != 'n'
+	# 		puts "Invalid response."
+	# 		puts "Please enter 'y' for yes and 'n' for no."
+	# 		user_input = gets.strip.downcase
+	# 	end
+	#     user_input
+	# end
 
     def quotes
         quotes = []
