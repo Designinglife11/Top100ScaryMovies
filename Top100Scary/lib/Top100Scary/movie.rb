@@ -170,6 +170,30 @@ class Top100Scary::Movie
         trivia
     end
 
+    def print_trivia
+		puts "\nHere are five fun facts about #{title}:"
+		i = 0
+		user_input = 'y'
+		
+		while i <= 5 && user_input == 'y'
+		    puts "\n"
+			
+			while i >= 0 && i <= 49 && user_input == 'y'
+				if trivia[4] != nil 
+					puts trivia[0..4]
+					i+=1
+                    user_input = gets.strip.downcase
+				else 
+					while trivia[i] != nil
+						puts trivia[i]
+						i+=1
+					end
+					user_input = 'n'
+				end
+			end
+		end
+    end
+
     # def y_n_response
 	# 	"Please enter 'y' for yes and 'n' for no."
 	# 	user_input = gets.strip.downcase
